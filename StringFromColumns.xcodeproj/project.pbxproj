@@ -14,6 +14,9 @@
 		E687F7B413A5F24D00EC9785 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E687F7B313A5F24D00EC9785 /* main.m */; };
 		E687F7B713A5F24D00EC9785 /* StringFromColumnsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E687F7B613A5F24D00EC9785 /* StringFromColumnsAppDelegate.m */; };
 		E687F7BA13A5F24D00EC9785 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E687F7B813A5F24D00EC9785 /* MainWindow.xib */; };
+		E68F49A813A5F55A00442446 /* YBStringSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = E68F49A513A5F55A00442446 /* YBStringSeparator.m */; };
+		E68F49A913A5F55A00442446 /* YBStringSeparatorHelperClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = E68F49A713A5F55A00442446 /* YBStringSeparatorHelperClasses.m */; };
+		E68F49AD13A5F91200442446 /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68F49AC13A5F91200442446 /* RootController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +24,19 @@
 		E687F7A613A5F24D00EC9785 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E687F7A813A5F24D00EC9785 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E687F7AA13A5F24D00EC9785 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E687F7AE13A5F24D00EC9785 /* StringFromColumns-Info.plist */ = {isa = PBXFileReference; path = "StringFromColumns-Info.plist"; sourceTree = "<group>"; };
+		E687F7AE13A5F24D00EC9785 /* StringFromColumns-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StringFromColumns-Info.plist"; sourceTree = "<group>"; };
 		E687F7B013A5F24D00EC9785 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E687F7B213A5F24D00EC9785 /* StringFromColumns-Prefix.pch */ = {isa = PBXFileReference; path = "StringFromColumns-Prefix.pch"; sourceTree = "<group>"; };
+		E687F7B213A5F24D00EC9785 /* StringFromColumns-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StringFromColumns-Prefix.pch"; sourceTree = "<group>"; };
 		E687F7B313A5F24D00EC9785 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E687F7B513A5F24D00EC9785 /* StringFromColumnsAppDelegate.h */ = {isa = PBXFileReference; path = StringFromColumnsAppDelegate.h; sourceTree = "<group>"; };
+		E687F7B513A5F24D00EC9785 /* StringFromColumnsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringFromColumnsAppDelegate.h; sourceTree = "<group>"; };
 		E687F7B613A5F24D00EC9785 /* StringFromColumnsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringFromColumnsAppDelegate.m; sourceTree = "<group>"; };
 		E687F7B913A5F24D00EC9785 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		E68F49A413A5F55A00442446 /* YBStringSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YBStringSeparator.h; path = Classes/YBStringSeparator.h; sourceTree = "<group>"; };
+		E68F49A513A5F55A00442446 /* YBStringSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YBStringSeparator.m; path = Classes/YBStringSeparator.m; sourceTree = "<group>"; };
+		E68F49A613A5F55A00442446 /* YBStringSeparatorHelperClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YBStringSeparatorHelperClasses.h; path = Classes/YBStringSeparatorHelperClasses.h; sourceTree = "<group>"; };
+		E68F49A713A5F55A00442446 /* YBStringSeparatorHelperClasses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YBStringSeparatorHelperClasses.m; path = Classes/YBStringSeparatorHelperClasses.m; sourceTree = "<group>"; };
+		E68F49AB13A5F91200442446 /* RootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootController.h; path = Classes/RootController.h; sourceTree = "<group>"; };
+		E68F49AC13A5F91200442446 /* RootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootController.m; path = Classes/RootController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +56,9 @@
 		E687F79713A5F24C00EC9785 = {
 			isa = PBXGroup;
 			children = (
-				E687F7AC13A5F24D00EC9785 /* StringFromColumns */,
+				E687F7AC13A5F24D00EC9785 /* Classes */,
+				E687F7C913A5F45D00EC9785 /* Resources */,
+				E687F7AD13A5F24D00EC9785 /* Supporting Files */,
 				E687F7A513A5F24D00EC9785 /* Frameworks */,
 				E687F7A313A5F24D00EC9785 /* Products */,
 			);
@@ -71,14 +82,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E687F7AC13A5F24D00EC9785 /* StringFromColumns */ = {
+		E687F7AC13A5F24D00EC9785 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E68F49A213A5F54C00442446 /* StringSeparator */,
+				E68F49AA13A5F8D300442446 /* RootController */,
 				E687F7B513A5F24D00EC9785 /* StringFromColumnsAppDelegate.h */,
 				E687F7B613A5F24D00EC9785 /* StringFromColumnsAppDelegate.m */,
-				E687F7B813A5F24D00EC9785 /* MainWindow.xib */,
-				E687F7AD13A5F24D00EC9785 /* Supporting Files */,
 			);
+			name = Classes;
 			path = StringFromColumns;
 			sourceTree = "<group>";
 		};
@@ -91,6 +103,36 @@
 				E687F7B313A5F24D00EC9785 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = StringFromColumns;
+			sourceTree = "<group>";
+		};
+		E687F7C913A5F45D00EC9785 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E687F7B813A5F24D00EC9785 /* MainWindow.xib */,
+			);
+			name = Resources;
+			path = StringFromColumns;
+			sourceTree = "<group>";
+		};
+		E68F49A213A5F54C00442446 /* StringSeparator */ = {
+			isa = PBXGroup;
+			children = (
+				E68F49A413A5F55A00442446 /* YBStringSeparator.h */,
+				E68F49A513A5F55A00442446 /* YBStringSeparator.m */,
+				E68F49A613A5F55A00442446 /* YBStringSeparatorHelperClasses.h */,
+				E68F49A713A5F55A00442446 /* YBStringSeparatorHelperClasses.m */,
+			);
+			name = StringSeparator;
+			sourceTree = "<group>";
+		};
+		E68F49AA13A5F8D300442446 /* RootController */ = {
+			isa = PBXGroup;
+			children = (
+				E68F49AB13A5F91200442446 /* RootController.h */,
+				E68F49AC13A5F91200442446 /* RootController.m */,
+			);
+			name = RootController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +196,9 @@
 			files = (
 				E687F7B413A5F24D00EC9785 /* main.m in Sources */,
 				E687F7B713A5F24D00EC9785 /* StringFromColumnsAppDelegate.m in Sources */,
+				E68F49A813A5F55A00442446 /* YBStringSeparator.m in Sources */,
+				E68F49A913A5F55A00442446 /* YBStringSeparatorHelperClasses.m in Sources */,
+				E68F49AD13A5F91200442446 /* RootController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +305,7 @@
 				E687F7BF13A5F24D00EC9785 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

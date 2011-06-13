@@ -7,6 +7,7 @@
 //
 
 #import "StringFromColumnsAppDelegate.h"
+#import "RootController.h"
 
 @implementation StringFromColumnsAppDelegate
 
@@ -15,7 +16,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    RootController *rootController = [[[RootController alloc] init] autorelease];
+
+    nc = [[UINavigationController alloc] initWithRootViewController:rootController];
+    [nc setNavigationBarHidden:YES];
+    
+    [self.window addSubview:nc.view];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -61,6 +68,7 @@
 
 - (void)dealloc
 {
+    [nc release];
     [_window release];
     [super dealloc];
 }

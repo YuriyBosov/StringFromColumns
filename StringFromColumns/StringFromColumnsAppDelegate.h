@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface StringFromColumnsAppDelegate : NSObject <UIApplicationDelegate> {
-
+    UINavigationController *nc;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

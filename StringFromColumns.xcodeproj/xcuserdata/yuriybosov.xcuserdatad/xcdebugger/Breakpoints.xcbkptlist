@@ -2,4 +2,23 @@
 <Bucket
    type = "1"
    version = "1.0">
+<<<<<<< HEAD
+   <FileBreakpoints>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "StringFromColumns/Classes/YBStringSeparator.m"
+         timestampString = "329645230.784582"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "150"
+         endingLineNumber = "150"
+         landmarkName = "-calculation"
+         landmarkType = "5">
+      </FileBreakpoint>
+   </FileBreakpoints>
+=======
+>>>>>>> 64d78a3fd57dace8bde3c6b20712b59e00a5f272
 </Bucket>

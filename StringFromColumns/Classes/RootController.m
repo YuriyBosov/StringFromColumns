@@ -89,6 +89,7 @@
                                          contentView.contentSize.height + delta_pos);
     
     [labelarray release];
+    [contentView release];
 }
 
 

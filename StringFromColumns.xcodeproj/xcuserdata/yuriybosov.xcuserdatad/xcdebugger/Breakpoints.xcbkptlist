@@ -9,20 +9,6 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "StringFromColumns/Classes/YBStringSeparator.m"
-         timestampString = "329645211.616024"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "103"
-         endingLineNumber = "103"
-         landmarkName = "-calculation"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "StringFromColumns/Classes/YBStringSeparator.m"
          timestampString = "329645230.784582"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"

@@ -54,11 +54,39 @@
 {
     NSString *str = [NSString stringWithUTF8String: "The objects you create using NSString and NSMutableString are referred to as string objects (or, when no confusion will result, merely as strings). The term C string refers to the standard char * type. Because of the nature of class clusters, string objects aren’t actual instances of the NSString or NSMutableString classes but of one of their private subclasses. Although a string object’s class is private, its interface is public, as declared by these abstract superclasses, NSString and NSMutableString. The string classes adopt the NSCopying and NSMutableCopying protocols, making it convenient to convert a string of one type to the other.The objects you create using NSString and NSMutableString are referred to as string objects (or, when no confusion will result, merely as strings). The term C string refers to the standard char * type. Because of the nature of class clusters, string objects aren’t actual instances of the NSString or NSMutableString classes but of one of their private subclasses. Although a string object’s class is private, its interface is public, as declared by these abstract superclasses, NSString and NSMutableString. The string classes adopt the NSCopying and NSMutableCopying protocols, making it convenient to convert a string of one type to the other.instances of the NSString or NSMutableString classes but of one of their private subclasses. Although a string object’s class is private, its interface is public, as declared by these abstract superclasses, NSString and NSMutableString. The string classes adopt the NSCopying and NSMutableCopying protocols, making it convenient to convert a string of one type"];
     
+    UIScrollView *contentView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    contentView.contentSize = CGSizeMake(0,0);
+    [self.view addSubview:contentView];
+    
+    // size column
+    CGSize size = CGSizeMake(self.view.frame.size.width - 100, 500);
+    
     YBStringSeparator *separator = [YBStringSeparator separatorWithText:str
-                                                               font:[UIFont systemFontOfSize:16] 
-                                                              width:300 
-                                                             heigth:400];
-    NSArray *labelarray = [separator getLabelWithSubString];
+                                                               font:[UIFont systemFontOfSize:40] 
+                                                              width:size.width 
+                                                             heigth:size.height];
+    NSArray *labelarray = [[separator getLabelWithSubString] retain];
+    
+    float delta_pos = 50.f;
+    float x_pos =  delta_pos + size.width/2;
+    float y_pos = 0;
+    
+    for (int i = 0; i < [labelarray count]; i++) {
+        UILabel *label = [labelarray objectAtIndex:i];
+        [contentView addSubview:label];
+        
+        y_pos += label.frame.size.height/2 + delta_pos;
+        
+        label.backgroundColor = [UIColor redColor];
+        label.center = CGPointMake(x_pos,y_pos);
+        
+        y_pos += label.frame.size.height/2;
+        
+        contentView.contentSize = CGSizeMake(contentView.frame.size.width,y_pos);
+    }
+    
+    contentView.contentSize = CGSizeMake(contentView.frame.size.width,
+                                         contentView.contentSize.height + delta_pos);
     
     [labelarray release];
 }

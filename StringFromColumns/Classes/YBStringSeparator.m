@@ -88,7 +88,7 @@
             [labelsArrey addObject:label];
         }
     }
-    return [NSArray arrayWithArray:labelsArrey];
+    return labelsArrey;
 }
 //==========================================================================================
 #pragma mark - Private method
@@ -96,7 +96,7 @@
 {
     if (_wordList)
         [_wordList release];
-    _wordList = [self parsingTextContent];
+    _wordList = [[self parsingTextContent] retain];
     
     if ([_wordList count]) 
     {
@@ -163,7 +163,7 @@
 //==========================================================================================
 - (NSMutableArray*)parsingTextContent
 {
-    NSMutableArray* wordList = [[NSMutableArray alloc] init];
+    NSMutableArray* wordList = [[[NSMutableArray alloc] init] autorelease];
     NSString *delitel = @" ";
     NSRange beginRange = NSMakeRange(0, 0);
     NSRange currentRange = [_textContent rangeOfString:delitel];
